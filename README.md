@@ -69,3 +69,6 @@ Special shoutout to our instructors!!
 [Ticketmaster Discovery API](https://developer.ticketmaster.com//)
 
 Icons from www.flaticon.com. 
+
+
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 

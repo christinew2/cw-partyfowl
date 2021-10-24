@@ -20,7 +20,7 @@ async function login(req, res) {
 }
 
 const signup = async (req, res) => {
-  const user = new User(req.body);
+  const user = new User(req.body); 
   const newProfile = new Profile(req.body)
 
   user.profile = newProfile._id

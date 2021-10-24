@@ -2,11 +2,15 @@ import React, { useEffect, useState } from "react";
 import { usePrevious } from "../../hooks/usePrevious";
 import styles from "./Landing.module.css";
 
+// Assets
+import birds from "../../assets/animation/launch.json"
+
 //Services
 import { getAllEvents } from "../../services/ticketmasterAPI";
 
 //Components
 import Feed from "../../components/Feed/Feed";
+import Animation from "../../components/misc/Animation"
 
 const Landing = ({ user }) => {
   const [eventData, setEventData] = useState([]);
@@ -43,6 +47,9 @@ const Landing = ({ user }) => {
           />
         }
       </div>
+      <div className="launch-animation">
+                <Animation animData={birds}></Animation>
+            </div>
     </main>
   );
 };
