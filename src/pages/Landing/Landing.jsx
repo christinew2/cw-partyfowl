@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { usePrevious } from "../../hooks/usePrevious";
-import styles from "./Landing.module.css";
+import styles from "./Landing.css";
 
 // Assets
 import birds from "../../assets/animation/launch.json"
