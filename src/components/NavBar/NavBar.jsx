@@ -8,23 +8,21 @@ import './NavBar.css'
 const NavBar = ({ user, handleLogout }) => {
 	return (
 		<nav className="nav-bar">
-			{user ? (
-				<>
-					<NavLink className='Home nav-a' to='/'>Home</NavLink>
-					<div className='user-links'>
-						<NavLink className='nav-a logout' to='/' onClick={handleLogout}>Log Out</NavLink>
-						<NavLink className='nav-a profile' to='/profile'>Profile</NavLink>
-					</div>
-				</>
-			) : (
-				<>
-					<NavLink className='Home nav-a' to='/'>Home</NavLink>
-					<div className='form-links'>
-						<NavLink className='login nav-a' to="/login">Log In</NavLink>
-						<NavLink className='signup nav-a' to="/signup">Sign Up</NavLink>
-					</div>
-				</>
-			)}
+			<div className="nav-bar-left"> 
+				<NavLink className="Home nav-a" to="/">Home</NavLink>
+			</div>
+
+			{user ? 
+				<div className="nav-bar-right">
+					<NavLink to="/" onClick={handleLogout}>Log Out</NavLink>
+					<NavLink to="/profile">Profile</NavLink>
+				</div>
+			 : 
+				<div className="nav-bar-right">
+					<NavLink to="/login">Log In</NavLink>
+					<NavLink to="/signup">Sign Up</NavLink>
+				</div>	
+			}
 		</nav>
 	)
 }

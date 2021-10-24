@@ -1,121 +1,31 @@
-a {
+.nav-bar a {
+    font-size: 1.25rem;
+    color: black;
     text-decoration: none;
+    margin: 0 1rem 0 1rem;
 }
-.nav-bar{
-    /* just to test if css is connected - and it is! */
-    background: #b9b9ff;
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
     height: 3.5rem;
     width: 100vw;
-    border-bottom: 1px solid black;
-    box-shadow: 5px 5px 5px rgb(108, 108, 129); 
     position: fixed;
     top: 0;
 }
-.nav-a {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 2.3rem;
-    text-decoration: none;
-    margin: 3px;
-    vertical-align:top;
-    display: inline-block;
-    max-height: 3vh;
+
+.nav-bar a.on {
+    color: red;
 }
 
-.Home {
-    margin-left: 10vw;
-    width: 33%;
-    height: 3vh;
-}
-.header-img {
-    height: 4rem;
-    width: 15%;
-}
-.login, .signup, .logout, .profile{
-    color: white;
-    text-align: right;
-    font-size: 2rem;
-    /* width: 10%; */
-    /* position: absolute;
-    top: 0;
-    right: 1;
-    width: 25%; */
-    /* margin: 0; */
 
-}
-
-.signup:hover{
-    color: black;
-}
-
-.login:hover{
-    color: black;
-}
-.form-links, .user-links {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25%;
-    vertical-align: top;
-}
-.nest-icon {
-    max-height: 3.2rem;
-    margin-right: 10px;
-}
-
-.goose-icon {
-    max-height: 3rem;
-}
-
-.goose-icon.flying {
-    animation:linear infinite alternate;
-    animation-name: run;
-    animation-duration: 5s;
-}
 @media (max-width: 1000px){
-    .login, .signup, .logout, .profile{
-        color: white;
-        text-align: right;
-        font-size: 1.5rem;
-        justify-content: center;
-    }
-    .form-links, .user-links {
-       justify-content: center;
-    }
-    img.img-event {
-        min-width: 210px;
-    }    
+      
 }
 
 @media (max-width: 850px){
-    .login, .signup, .logout, .profile{
-        font-size: 1.2rem;
-    }
-    .form-links, .user-links {
-    justify-content: center;
-    margin: 0.2vh;
-    }
-    img.img-event {
-        min-width: 210px;
-    }
-    h3.h3-search {
-        font-size: 1rem;
-    }
     
 }
-/* @media (max-width: 375px){
-    .event-list {
-        
-        justify-content: center;
-        display: inline-block;
-        width: 265px;
-        margin: 10px;
-        padding: 47px;
-    }
-    span.header-img {
-        display: none;
-    }
-    
-} */
+
 
