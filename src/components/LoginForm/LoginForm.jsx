@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import styles from './LoginForm.module.css'
+import './LoginForm.module.css'
 import * as authService from '../../services/authService'
 
 const LoginForm = (props) => {
@@ -30,10 +30,10 @@ const LoginForm = (props) => {
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className={styles.container}
+      className="login-form"
     >
-      <div className={styles.inputContainer}>
-        <label htmlFor="email-input" className={styles.label}>
+      <div className="login-input">
+        <label htmlFor="email-input" className="login-label">
           Email
         </label>
         <input
@@ -45,8 +45,8 @@ const LoginForm = (props) => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password-input" className={styles.label}>
+      <div className="login-input">
+        <label htmlFor="password-input" className="login-label">
           Password
         </label>
         <input
@@ -59,7 +59,7 @@ const LoginForm = (props) => {
         />
       </div>
       <div>
-        <button className={styles.button}>Log In</button>
+        <button className="login-button">Log In</button>
         <Link to="/">
           <button>Cancel</button>
         </Link>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import styles from './SignupForm.module.css'
+import './SignupForm.module.css'
 import * as authService from '../../services/authService'
 
 const SignupForm = (props) => {
@@ -41,10 +41,10 @@ const SignupForm = (props) => {
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className={styles.container}
+      className="sign-up-form"
     >
-      <div className={styles.inputContainer}>
-        <label htmlFor="name" className={styles.label}>
+      <div className="signup-input">
+        <label htmlFor="name" className="signup-label">
           Name: 
         </label>
         <input
@@ -58,8 +58,8 @@ const SignupForm = (props) => {
           required
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="email-input" className={styles.label}>Email: </label>
+      <div className="signup-input">
+        <label htmlFor="email-input" className="signup-label">Email: </label>
         <input
           type="text"
           autoComplete="off"
@@ -71,8 +71,8 @@ const SignupForm = (props) => {
           required
         />
       </div>
-      <div className={styles.ageContainer}>
-        <label htmlFor="age-input" className={styles.label}>
+      <div className="signup-input">
+        <label htmlFor="age-input" className="signup-label">
           Age: 
         </label>
         <input
@@ -85,8 +85,8 @@ const SignupForm = (props) => {
           placeholder="1"
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="location-input" className={styles.label}>
+      <div className="signup-input">
+        <label htmlFor="location-input" className="signup-label">
           Location: 
         </label>
         <input
@@ -99,8 +99,8 @@ const SignupForm = (props) => {
           placeholder="123456 (zipcode)"
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password-input" className={styles.label}>
+      <div className="signup-input">
+        <label htmlFor="password-input" className="signup-label">
           Password: 
         </label>
         <input
@@ -113,8 +113,8 @@ const SignupForm = (props) => {
           placeholder="secret honk!"
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="confirm-input" className={styles.label}>
+      <div className="signup-input">
+        <label htmlFor="confirm-input" className="signup-label">
           Confirm Password: 
         </label>
         <input
@@ -127,13 +127,13 @@ const SignupForm = (props) => {
           placeholder="secret honk!"
         />
       </div>
-      <div className={styles.imgContainer}>
-        <label htmlfor="avatar" className={styles.label}>Profile Image: </label>
+      <div className="signup-input">
+        <label htmlfor="avatar" className="signup-label">Profile Image: </label>
         <input type="file" id="avatar" name="avatar"
               accept=".jpg, .jpeg, .png"/>
       </div>
-      <div className={styles.buttonContainer}>
-        <button disabled={validForm} className={styles.button}>Sign Up</button>
+      <div className="signup-input">
+        <button disabled={validForm} className="signup-button">Sign Up</button>
         <Link to="/">
           <button>Cancel</button>
         </Link>

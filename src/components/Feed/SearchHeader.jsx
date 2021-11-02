@@ -36,7 +36,7 @@ const SearchHeader = (props) => {
   };
 
   return (
-    <div className="hidden-container">
+    
       <div className="header">
         <h3 className="h3-search">
           {!hasSearchRun ? "Enter A Zip Code Here" : `Search Results: ${keyword}`}
@@ -58,7 +58,7 @@ const SearchHeader = (props) => {
           </>
         </div>
       </div>
-    </div>
+    
   );
 };
 

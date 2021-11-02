@@ -4,7 +4,7 @@ import './Search.css'
 
 const Search = (props) => {
   return (
-    <div className="search-container">
+    <div className="cover">
       <form className="search" onSubmit={props.handleSearch}>
         <div class="tb">
           <div class="td">

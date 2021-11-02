@@ -36,7 +36,7 @@ const Landing = ({ user }) => {
   return (
     <Split
       className="split"
-      minSize={150}
+      minSize={300}
       maxSize={1000}
       gutterSize={10}
     >
