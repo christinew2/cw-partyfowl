@@ -10,7 +10,6 @@ import { getAllEvents } from "../../services/ticketmasterAPI";
 
 //Components
 import SearchHeader from '../../components/Feed/SearchHeader'
-import Feed from "../../components/Feed/Feed";
 import Animation from "../../components/misc/Animation"
 
 const Landing = ({ user }) => {
@@ -47,21 +46,11 @@ const Landing = ({ user }) => {
           setHasSearchRun={setHasSearchRun}
         />
         }
-        {/* {eventData &&
-          <Feed className='feed-parent'
-            eventData={eventData}
-            setEventData={setEventData}
-            keyword={keyword}
-            setKeyword={setKeyword}
-            clearSearch={clearSearch}
-            hasSearchRun={hasSearchRun}
-            setHasSearchRun={setHasSearchRun}
-          />
-        } */}
+        
       </div>
-      <div className="launch-animation">
+      {/* <div className="launch-animation">
                 <Animation animData={birds}></Animation>
-            </div>
+      </div> */}
     </main>
   );
 };
