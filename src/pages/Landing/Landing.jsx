@@ -9,6 +9,7 @@ import birds from "../../assets/animation/launch.json"
 import { getAllEvents } from "../../services/ticketmasterAPI";
 
 //Components
+import SearchHeader from '../../components/Feed/SearchHeader'
 import Feed from "../../components/Feed/Feed";
 import Animation from "../../components/misc/Animation"
 
@@ -35,7 +36,18 @@ const Landing = ({ user }) => {
   return (
     <main className={styles.container}>
       <div>
-        {eventData &&
+        {eventData && 
+        <SearchHeader 
+          eventData={eventData}
+          setEventData={setEventData}
+          keyword={keyword}
+          setKeyword={setKeyword}
+          clearSearch={clearSearch}
+          hasSearchRun={hasSearchRun}
+          setHasSearchRun={setHasSearchRun}
+        />
+        }
+        {/* {eventData &&
           <Feed className='feed-parent'
             eventData={eventData}
             setEventData={setEventData}
@@ -45,7 +57,7 @@ const Landing = ({ user }) => {
             hasSearchRun={hasSearchRun}
             setHasSearchRun={setHasSearchRun}
           />
-        }
+        } */}
       </div>
       <div className="launch-animation">
                 <Animation animData={birds}></Animation>

@@ -1,7 +1,7 @@
 import React from 'react'
 import LoginForm from '../../../components/LoginForm/LoginForm'
 import styles from './Login.module.css'
-import '../../../components/images/jpg-draft1.jpg' 
+// import '../../../components/images/jpg-draft1.jpg' 
 
 
 const LoginPage = (props) => {

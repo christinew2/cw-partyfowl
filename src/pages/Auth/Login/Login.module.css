@@ -7,7 +7,8 @@ html {
   height: 100vh;
 }
 body {
-  background-image: url("../../../components/images/jpg-draft1.jpg");
+  /* background-image: url("../../../components/images/jpg-draft1.jpg"); */
+  background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
