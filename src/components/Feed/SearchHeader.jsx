@@ -11,14 +11,12 @@ import Search from "./Search";
 const SearchHeader = (props) => {
   const history = useHistory();
   const {
-    // setEventData,
     keyword,
     setKeyword,
 
     clearSearch,
     hasSearchRun,
     setHasSearchRun,
-
   } = props;
 
   const handleSearch = async (e) => {
