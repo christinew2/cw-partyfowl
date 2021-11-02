@@ -1,14 +1,33 @@
-.container {
+.landing-left {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-right {
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
 
-.feed-parent {
-  margin-top: 60px;
+.landing-search{
+  width: 80%;
+  margin: auto;
 }
 
-.landing-img {
-  max-height: 15vh;
-  margin-top: 60px;
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { usePrevious } from "../../hooks/usePrevious";
-import styles from "./Landing.css";
+import Split from "react-split"
+import "./Landing.css";
 
 // Assets
 import birds from "../../assets/animation/launch.json"
@@ -33,25 +34,38 @@ const Landing = ({ user }) => {
   }, []);
 
   return (
-    <main className={styles.container}>
-      <div>
-        {eventData && 
-        <SearchHeader 
-          eventData={eventData}
-          setEventData={setEventData}
-          keyword={keyword}
-          setKeyword={setKeyword}
-          clearSearch={clearSearch}
-          hasSearchRun={hasSearchRun}
-          setHasSearchRun={setHasSearchRun}
-        />
-        }
+    <Split
+      className="split"
+      minSize={150}
+      maxSize={1000}
+      gutterSize={10}
+    >
+      <div className="landing-left">
+        <h3>PartyFowl</h3>
+        <p>
+          About PartyFowl
+        </p>
+      </div>
+      <div className="landing-right">
+        <div className="landing-search">
+          {eventData && 
+          <SearchHeader 
+            eventData={eventData}
+            setEventData={setEventData}
+            keyword={keyword}
+            setKeyword={setKeyword}
+            clearSearch={clearSearch}
+            hasSearchRun={hasSearchRun}
+            setHasSearchRun={setHasSearchRun}
+          />
+          }
+        </div>
         
       </div>
       {/* <div className="launch-animation">
                 <Animation animData={birds}></Animation>
       </div> */}
-    </main>
+    </Split>
   );
 };
 

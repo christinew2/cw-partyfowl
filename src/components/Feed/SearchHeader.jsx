@@ -17,6 +17,7 @@ const SearchHeader = (props) => {
     clearSearch,
     hasSearchRun,
     setHasSearchRun,
+
   } = props;
 
   const handleSearch = async (e) => {
@@ -38,7 +39,7 @@ const SearchHeader = (props) => {
     <div className="hidden-container">
       <div className="header">
         <h3 className="h3-search">
-          {!hasSearchRun ? "Enter Zip Code" : `Search Results: ${keyword}`}
+          {!hasSearchRun ? "Enter A Zip Code Here" : `Search Results: ${keyword}`}
         </h3>
 
         {!hasSearchRun && (
