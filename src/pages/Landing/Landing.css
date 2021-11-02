@@ -4,14 +4,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(238, 238, 238);
+  /* background-color: rgb(238, 238, 238); */
+  background: url("../../assets/greybirds.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   animation: fade-slide-left 2.2s ease;
 }
 
 .landing-right {
   display: flex;
   align-items: center;
-  background-color: rgb(95, 192, 192);
+  /* background-color: rgb(95, 192, 192); */
+  background: url("../../assets/greenbirds.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .landing-search{
@@ -19,6 +27,48 @@
   height: calc(width * 0.9);
   margin: auto;
   animation: fade-slide-right 2.2s ease;
+}
+
+.title-cover {
+  width: 60%;
+  background-color: #ffd03685;
+  padding: 35px;
+  border-radius: 5%;
+  box-shadow: 0 0px 10px #eeda2ab0, 0 0 0 15px #ffffffeb;
+  animation: fade-slide-right 2.2s ease;
+}
+
+.title {
+  font-size: 5.5vw;
+  color: white;
+  text-shadow: -2px 2px 0.5rem rgb(231, 183, 23);
+  animation: fade-slide-right 2.7s ease;
+}
+
+.cover {
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding: 35px;
+  margin: 0 auto 0 auto;
+  background-color: rgb(51, 155, 155);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgb(95, 192, 192), 0 0 0 20px #ffffffeb;
+  transform: scale(0.6);
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #ffffff5e;
+  
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
 }
 
 @keyframes fade-slide-left {
@@ -40,33 +90,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-
-.cover
-{
-    top: 50%;
-    left: 0;
-    right: 0;
-    padding: 35px;
-    margin: 0 auto 0 auto;
-    background-color: rgb(51, 155, 155);
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgb(95, 192, 192), 0 0 0 20px #ffffffeb;
-    transform: scale(0.6);
-}
-
-.split {
-  display: flex;
-  flex-direction: row;
-}
-
-.gutter {
-  background-color: #ffffffeb;
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-
-.gutter.gutter-horizontal {
-  cursor: col-resize;
 }

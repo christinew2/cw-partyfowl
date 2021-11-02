@@ -36,15 +36,18 @@ const Landing = ({ user }) => {
   return (
     <Split
       className="split"
-      minSize={300}
+      sizes={[55,45]}
+      minSize={550}
       maxSize={1000}
       gutterSize={10}
     >
       <div className="landing-left">
-        <h3>PartyFowl</h3>
-        <p>
-          About PartyFowl
-        </p>
+        <div className="title-cover">
+          <h1 className="title">PartyFowl</h1>
+          <p>
+            Join the flock of party-goers in finding events near you with ease!
+          </p>
+        </div>
       </div>
       <div className="landing-right">
         <div className="landing-search">
@@ -62,9 +65,7 @@ const Landing = ({ user }) => {
         </div>
         
       </div>
-      {/* <div className="launch-animation">
-                <Animation animData={birds}></Animation>
-      </div> */}
+     
     </Split>
   );
 };

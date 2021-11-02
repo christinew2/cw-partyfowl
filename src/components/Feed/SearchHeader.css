@@ -1,4 +1,5 @@
 .h3-search {
   text-align: center;
   color: white;
+  animation: fade-slide-right 2.5s ease;
 }
