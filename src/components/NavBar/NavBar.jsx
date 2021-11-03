@@ -15,7 +15,7 @@ const NavBar = ({ user, handleLogout }) => {
 			{user ? 
 				<div className="nav-bar-right">
 					<NavLink to="/" onClick={handleLogout}>Log Out</NavLink>
-					<NavLink to="/profile">Profile</NavLink>
+					{/* <NavLink to="/profile">Profile</NavLink> */}
 				</div>
 			 : 
 				<div className="nav-bar-right">

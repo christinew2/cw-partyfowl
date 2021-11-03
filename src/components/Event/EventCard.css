@@ -8,17 +8,17 @@
 .event-card {
   /* background-color: white; */
   width: 500px;
-  height: 20vh;
+  height: 200px;
   display: flex;
   align-items: center;
   margin: 2vh;
   border-radius: 5% 5%;
-  animation: fade-slide-left 2.2s ease;
+  animation: fade-slide-left 1.4s ease;
 }
 
 .card-img {
-  height: 201px;
   max-width: 250px;
+  height: 202px;
   border-top-left-radius: 5%;
   border-bottom-left-radius: 5%;
   z-index: 2;

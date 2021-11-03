@@ -24,7 +24,7 @@ const SignupForm = (props) => {
     authService.signup(formData)
     .then(() => {
       props.handleSignupOrLogin()
-      history.push('/')
+      history.push('/login')
     })
     .catch(err => {
       props.updateMessage(err.message)

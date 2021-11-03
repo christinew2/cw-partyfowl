@@ -89,77 +89,82 @@ const EventDetails = (props) => {
   }
   return (
     <div className='details-div'>
-      <h1 className='details-h1'>{eventDetails.name}</h1>
-      <div className="display-imgs">
-        <img className='details-img' src={eventDetails.images[0].url} alt="event" />
-        <EventDetailsMap 
-          eventDetails={eventDetails}
-        />
-      </div>
-      <div className='map-n-details'>
-        <div className='details-text'>
-          <div className="description">
+      <div className="details-top">
+        <div className="details-top-left">
+          <div className="details-h1-cover">
+            <h1 className='details-h1'>{eventDetails.name}</h1>
+          </div>
+          <img className='details-img' src={eventDetails.images[1].url} alt="event" />
+        </div>
+        <div className="details-top-right">
+          <div className="details-location">
+            <EventDetailsMap 
+              eventDetails={eventDetails}
+              />
+            <p>Location:</p>
+          </div>
+          <div className='details-text'>
             <p>Description: {eventDetails.description}</p>
+            <p>Date: {fixedDate} at {fixedTime}</p>
+            <div className='links-container'>
+              <a href={eventDetails?._embedded?.venues[0]?.url} rel='noreferrer' target='_blank'>
+                  <button>Click to see the venue</button>
+              </a>
+              <a href={eventDetails.url}  rel='noreferrer' target='_blank'>
+                  <button type='button'>Click to see available tickets</button>
+              </a>
+            </div>
+            
+            <div className="attending-users">
+              {eventExists && 
+                <div>
+                  <p><strong>List of Profiles Attending</strong></p>
+                  {profilesArray.map((profile) => (
+                      <div className="profile-listing">
+                          <img src={profile.avatar} alt="avatar" />
+                          {profile.name}
+                      </div>
+                  ))}
+                </div>
+              }
+            </div>
+            <button className='comment-btn' onClick={() => handleAttendClick()}>
+              I'm Attending This Event
+            </button>   
           </div>
-          <div className="datetime">
-            <p>Date: {fixedDate}</p>
-            <p>Time: {fixedTime}</p>
-          </div>
-          <div className="attending-users">
-            {eventExists && 
-              <div>
-                <p><strong>List of Profiles Attending</strong></p>
-                {profilesArray.map((profile) => (
-                    <div className="profile-listing">
-                        <img src={profile.avatar} alt="avatar" />
-                        {profile.name}
-                    </div>
-                ))}
-              </div>
-            }
-          </div>
-          <div className='links-container'>
-            <a href={eventDetails?._embedded?.venues[0]?.url} rel='noreferrer' target='_blank'>
-                <button>Click to see the venue</button>
-            </a>
-            <a href={eventDetails.url}  rel='noreferrer' target='_blank'>
-                <button type='button'>Click to see available tickets</button>
-            </a>
-          </div>
-          <button className='comment-btn' onClick={() => handleAttendClick()}>
-            I'm Attending This Event
-          </button>   
         </div>
       </div>
-      <div className="comments">
-        {!eventExists && 
-          <button className='comment-btn' onClick={() => createEventOnClick()}>
-            Make The First Comment!
-          </button>
-        }
-        {eventExists && 
-          <CommentSection
-            user={props.user}
-            eventId={id}
-            commentsArray={commentsArray}
-            setCommentsArray={setCommentsArray}
-          />
-        }     
-      </div>
-      <div className="photo-comments">
-        {!eventExists && 
-          <button className='photo-comment-btn' onClick={() => createEventOnClick()}>
-            Add The First Photo!
-          </button>
-        }
-        {eventExists && 
-          <PhotoCommentSection
+      <div className="details-bottom">
+        <div className="comments">
+          {!eventExists && 
+            <button className='comment-btn' onClick={() => createEventOnClick()}>
+              Make The First Comment!
+            </button>
+          }
+          {eventExists && 
+            <CommentSection
+              user={props.user}
+              eventId={id}
+              commentsArray={commentsArray}
+              setCommentsArray={setCommentsArray}
+              />
+            }     
+        </div>
+        <div className="photo-comments">
+          {!eventExists && 
+            <button className='photo-comment-btn' onClick={() => createEventOnClick()}>
+              Add The First Photo!
+            </button>
+          }
+          {eventExists && 
+            <PhotoCommentSection
             user={props.user}
             eventId={id}
             photoCommentsArray={photoCommentsArray}
             setPhotoCommentsArray={setPhotoCommentsArray}
-          />
-        }       
+            />
+          }       
+        </div>
       </div>
     </div>
   );

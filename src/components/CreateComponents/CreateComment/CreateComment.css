@@ -7,3 +7,16 @@
     height: 25px;
     width: 400px;
 }
+
+.create-form button{
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 13px; 
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: rgb(16, 138, 138);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

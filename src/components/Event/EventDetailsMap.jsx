@@ -14,8 +14,8 @@ const EventDetailsMap = (props) => {
     latitude: lat,
     longitude: long, 
     zoom: 13,
-    width: "40vw",
-    height: "400px"
+    width: "200px",
+    height: "200px"
   });
   
   return (
