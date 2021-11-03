@@ -1,6 +1,9 @@
 {
   "name": "mern-jwt",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.6.1"
+  },
   "private": true,
   "type": "module",
   "dependencies": {

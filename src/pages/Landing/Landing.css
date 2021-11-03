@@ -32,7 +32,7 @@
 
 .landing-search{
   width: 95%;
-  height: calc(width * 0.9);
+  /* height: calc(width * 0.9); */
   margin: auto;
   animation: fade-slide-right 2.2s ease;
 }
