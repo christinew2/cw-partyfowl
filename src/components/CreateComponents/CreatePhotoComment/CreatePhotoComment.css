@@ -1,5 +1,6 @@
 #photo-label {
-    margin-right: 20px;
+    margin-right: 10px;
+    color: white;
 }
 
 #image-url {
@@ -12,4 +13,16 @@
     margin-right: 20px;
     width: 300px;
     height: 25px;
+}
+
+#photo-input {
+    margin: 0 10px 5px 0;
+    height: 25px;
+    width: 16.5vw;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;  
 }

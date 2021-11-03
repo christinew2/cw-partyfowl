@@ -1,11 +1,18 @@
 #comment-label {
-    margin-right: 30px;
+    margin-right: 10px;
+    color: white;
 }
 
 #comment-input {
-    margin-right: 30px;
+    margin-right: 10px;
     height: 25px;
-    width: 400px;
+    width: 16.5vw;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;  
 }
 
 .create-form button{

@@ -17,7 +17,7 @@ const CreateComment = (props) => {
 
     return (
         <form onSubmit={handleSubmit} className='create-form'>
-            <label id='comment-label'>Enter Your Comment Here</label>
+            <label id='comment-label'>Enter Your Comment Here:</label>
             <input id='comment-input'
                 required
                 autoComplete='off'
