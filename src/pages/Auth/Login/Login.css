@@ -21,10 +21,12 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 
 .login-right h1 {
   color: white;
+  animation: fade-slide-right 2.8s ease;
 }
 
 .login-title-cover {

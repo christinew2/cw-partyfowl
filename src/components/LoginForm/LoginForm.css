@@ -6,7 +6,7 @@
   color: white;
   width: 30vw;
   
-
+  animation: fade-slide-right 2.3s ease;
 }
 
 .login-input {
