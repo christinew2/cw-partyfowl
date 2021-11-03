@@ -48,7 +48,7 @@ const SearchResults = (props) => {
   }, [props?.match?.params?.searchQuery]);
   
   useEffect(() => {
-    getEventsByGeoHash(150, geoHashLocation).then((data) => {
+    getEventsByGeoHash(75, geoHashLocation).then((data) => {
         data.hasOwnProperty("_embedded")
           ? setEventData(data._embedded.events)
           : setEventData([]);
@@ -58,7 +58,6 @@ const SearchResults = (props) => {
   return (
     <main className="results">
       <div className="results-left">
-        <h1 className="results-h1">Search Results</h1>
         <Feed className='feed-parent'
           eventData={eventData}
           setEventData={setEventData}

@@ -11,7 +11,7 @@ const Search = (props) => {
             <input 
               type="text" 
               autoComplete="off"
-              placeholder="Search"
+              placeholder="Search a Zip!"
               name="keyword"
               value={props.keyword}
               onChange={props.handleChange}

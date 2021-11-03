@@ -13,19 +13,9 @@
     width: 100vw;
     position: fixed;
     top: 0;
-}
-
-.active {
-    color: red;
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
 }
 
 
-/* @media (max-width: 1000px){
-      
-}
 
-@media (max-width: 850px){
-    
-}
- */
 

@@ -1,9 +1,11 @@
 .pin {
   top: -20px;
   left: -20px; 
-  height: 54px;
+  height: 65px;
 }
 
 .map {
   border-radius: 10px;
+  position: absolute;
+  bottom: 30px;
 }

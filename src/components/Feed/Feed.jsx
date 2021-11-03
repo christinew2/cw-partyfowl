@@ -7,13 +7,13 @@ import EventList from '../Event/EventList'
 const Feed = (props) => {
 
     return (
-        <>
+        <div className="feed-container">
             <SearchHeader {...props} />
-            <div className="spacing-block" />
+            <h1 className="results-h1">Search Results</h1>
             <EventList
                 eventsArray={props.eventData}
             />
-        </>
+        </div>
     )
 }
 
