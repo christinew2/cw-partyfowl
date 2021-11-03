@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { withRouter } from 'react-router-dom'
 import { usePrevious } from "../../hooks/usePrevious";
-import styles from "./SearchResults.module.css";
+import "./SearchResults.css";
 import geohash from "ngeohash"
 
 //Components
@@ -56,32 +56,31 @@ const SearchResults = (props) => {
   }, [geoHashLocation]);
 
   return (
-    <main className={styles.container}>
-      <div>
-        <h1 className="landing-h1">Search Results</h1>
-
-        {latitude && longitude && geoHashLocation && 
-
-        <SearchResultsMap
+    <main className="results">
+      <div className="results-left">
+        <h1 className="results-h1">Search Results</h1>
+        <Feed className='feed-parent'
           eventData={eventData}
-          latitude={latitude}
-          longitude={longitude}
+          setEventData={setEventData}
+          keyword={keyword}
+          setKeyword={setKeyword}
+          clearSearch={clearSearch}
+          hasSearchRun={hasSearchRun}
+          setHasSearchRun={setHasSearchRun}
+          setLatitude={setLatitude}
+          setLongitude={setLongitude}
+          setGeoHashLocation={setGeoHashLocation}
         />
-          }
       </div>
-      <div>
-      <Feed className='feed-parent'
-        eventData={eventData}
-        setEventData={setEventData}
-        keyword={keyword}
-        setKeyword={setKeyword}
-        clearSearch={clearSearch}
-        hasSearchRun={hasSearchRun}
-        setHasSearchRun={setHasSearchRun}
-        setLatitude={setLatitude}
-        setLongitude={setLongitude}
-        setGeoHashLocation={setGeoHashLocation}
-      />
+      <div className="results-right">
+        {latitude && longitude && geoHashLocation && 
+          <SearchResultsMap
+            className="results-map"
+            eventData={eventData}
+            latitude={latitude}
+            longitude={longitude}
+          />
+        }
       </div>
     </main>
   );

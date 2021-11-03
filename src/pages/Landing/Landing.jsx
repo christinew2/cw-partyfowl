@@ -51,6 +51,7 @@ const Landing = ({ user }) => {
       </div>
       <div className="landing-right">
         <div className="landing-search">
+        <h1 className="h1-search">Enter A Zip Code Here</h1>
           {eventData && 
           <SearchHeader 
             eventData={eventData}

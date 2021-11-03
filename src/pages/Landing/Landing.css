@@ -14,12 +14,20 @@
 
 .landing-right {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* background-color: rgb(95, 192, 192); */
   background: url("../../assets/greenbirds.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.h1-search {
+  text-align: center;
+  color: white;
+  animation: fade-slide-right 2.5s ease;
 }
 
 .landing-search{
