@@ -25,7 +25,7 @@ const SearchResultsMap = ({ eventData, latitude, longitude }) => {
   }, [latitude, longitude])
 
   return (
-    <div style={{ height: "88vh", width: "55vw" }} className="map">
+    <div style={{ height: "88vh", width: "55vw" }} className="results-map">
       <ReactMapGL
         {...viewport}
         mapStyle="mapbox://styles/wcrosby/cks530lbr9l0s17t68dk9ozze"

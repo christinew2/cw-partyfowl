@@ -9,6 +9,7 @@ const Search = (props) => {
         <div class="tb">
           <div class="td">
             <input 
+              className="search-input"
               type="text" 
               autoComplete="off"
               placeholder="Search a Zip!"
@@ -18,7 +19,7 @@ const Search = (props) => {
             />
           </div>
           <div class="td" id="s-cover">
-            <button type="submit">
+            <button type="submit" className="search-button">
               <div id="s-circle"></div>
               <span></span>
             </button>

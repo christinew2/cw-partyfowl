@@ -44,7 +44,7 @@ const Landing = ({ user }) => {
       <div className="landing-left">
         <div className="title-cover">
           <h1 className="title">PartyFowl</h1>
-          <p>
+          <p className="description">
             Join the flock of party-goers in finding events near you with ease!
           </p>
         </div>

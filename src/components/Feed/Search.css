@@ -15,7 +15,7 @@
     vertical-align: middle;
 }
 
-input, button
+.search-input, .search-button
 {
     color: #fff;
     padding: 0;
@@ -24,12 +24,12 @@ input, button
     background-color: transparent;
 }
 
-form
+.search
 {
     height: 96px;
 }
 
-input[type="text"]
+.search-input
 {
     width: 100%;
     height: 6vw;
@@ -37,7 +37,7 @@ input[type="text"]
     line-height: 1;
 }
 
-input[type="text"]::placeholder
+.search-input::placeholder
 {
     color: #e7e7e7a6;
 }
@@ -48,7 +48,7 @@ input[type="text"]::placeholder
     padding-left: 35px;
 }
 
-button
+.search-button
 {
     position: relative;
     display: block;
@@ -72,7 +72,7 @@ button
     transition: 0.5s ease all;
 }
 
-button span
+.search-button span
 {
     position: absolute;
     top: 68px;
@@ -86,7 +86,7 @@ button span
     transition: 0.5s ease all;
 }
 
-button span:before, button span:after
+.search-button span:before, .search-button span:after
 {
     content: '';
     position: absolute;
@@ -119,18 +119,18 @@ button span:before, button span:after
     transform: rotateZ(0);
 }
 
-#s-cover:hover button span:before
+#s-cover:hover .search-button span:before
 {
     bottom: 11px;
     transform: rotateZ(52deg);
 }
 
-#s-cover:hover button span:after
+#s-cover:hover .search-button span:after
 {
     bottom: -11px;
     transform: rotateZ(-52deg);
 }
-#s-cover:hover button span:before, #s-cover:hover button span:after
+#s-cover:hover .search-button span:before, #s-cover:hover .search-button span:after
 {
     right: -6px;
     width: 40px;

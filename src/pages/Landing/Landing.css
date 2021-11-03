@@ -44,13 +44,17 @@
   border-radius: 5%;
   box-shadow: 0 0px 10px #eeda2ab0, 0 0 0 15px #ffffffeb;
   animation: fade-slide-right 2.2s ease;
+  color: white;
 }
 
 .title {
   font-size: 5.5vw;
-  color: white;
   text-shadow: -2px 2px 0.5rem rgb(231, 183, 23);
   animation: fade-slide-right 2.7s ease;
+}
+
+.description {
+  color: rgb(68, 68, 68);
 }
 
 .cover {

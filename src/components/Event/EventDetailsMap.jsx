@@ -15,11 +15,11 @@ const EventDetailsMap = (props) => {
     longitude: long, 
     zoom: 13,
     width: "40vw",
-    height: "40vh"
+    height: "400px"
   });
   
   return (
-    <div className='map'>
+    <div className='details-map'>
       <ReactMapGL
       {...viewport}
       mapStyle="mapbox://styles/wcrosby/cks530lbr9l0s17t68dk9ozze"

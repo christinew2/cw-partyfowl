@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import './LoginForm.module.css'
+import './LoginForm.css'
 import * as authService from '../../services/authService'
 
 const LoginForm = (props) => {
@@ -58,7 +58,7 @@ const LoginForm = (props) => {
           onChange={handleChange}
         />
       </div>
-      <div>
+      <div className="login-buttons">
         <button className="login-button">Log In</button>
         <Link to="/">
           <button>Cancel</button>

@@ -90,13 +90,13 @@ const EventDetails = (props) => {
   return (
     <div className='details-div'>
       <h1 className='details-h1'>{eventDetails.name}</h1>
-      <div className="display-img">
+      <div className="display-imgs">
         <img className='details-img' src={eventDetails.images[0].url} alt="event" />
-      </div>
-      <div className='map-n-details'>
         <EventDetailsMap 
           eventDetails={eventDetails}
         />
+      </div>
+      <div className='map-n-details'>
         <div className='details-text'>
           <div className="description">
             <p>Description: {eventDetails.description}</p>
