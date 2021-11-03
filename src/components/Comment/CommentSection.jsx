@@ -37,10 +37,13 @@ const CommentSection = (props) => {
                 {...props}
                 handleCreateComment={handleCreateComment}
             ></CreateComment>
-            <CommentList 
-                {...props}
-                handleDeleteComment={handleDeleteComment}
-            />
+
+            <div className="comment-list">
+                <CommentList 
+                    {...props}
+                    handleDeleteComment={handleDeleteComment}
+                />
+            </div>
         </div>
     )
 }

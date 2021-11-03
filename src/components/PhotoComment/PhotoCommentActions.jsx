@@ -7,7 +7,7 @@ const PhotoCommentActions = (props) => {
             {
                 props.user &&
                 props.user?._id === props.photoComment?.owner?._id &&
-                <button onClick={() => props.handleDeletePhotoComment(props.photoComment._id)}>
+                <button onClick={() => props.handleDeletePhotoComment(props.photoComment._id)} id='delete-btn'>
                     Delete
                 </button>
             }

@@ -39,10 +39,12 @@ const PhotoCommentSection = (props) => {
                 {...props}
                 handleCreatePhotoComment={handleCreatePhotoComment}
             ></CreatePhotoComment>
-            <PhotoCommentList 
-                {...props}
-                handleDeletePhotoComment={handleDeletePhotoComment}
-            />
+            <div className="comment-list">
+                <PhotoCommentList 
+                    {...props}
+                    handleDeletePhotoComment={handleDeletePhotoComment}
+                />
+            </div>
         </div>
     )
 }

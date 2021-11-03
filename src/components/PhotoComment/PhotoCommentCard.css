@@ -1,0 +1,23 @@
+.comment-list {
+    display: flex;
+}
+
+.photo-comment-card {
+    background-color: rgba(255, 253, 253, 0.76);
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    margin: 8px;
+}
+
+#delete-btn {
+    background-color: rgb(218, 2, 2);
+    color: white;
+    height: 20px;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    outline: none;
+    border: none;
+}
