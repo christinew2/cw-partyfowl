@@ -1,4 +1,4 @@
-.login-form {
+.signup-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,17 +9,17 @@
   animation: fade-slide-right 2s ease;
 }
 
-.login-input {
+.signup-input {
   display: flex;
   justify-content: space-between;
   padding: 8px 8px;
-  font-size: 25px;
+  font-size: 20px;
   outline: none;
   border-radius: 5% 5%;
 
 }
 
-.login-input input {
+.signup-input input {
   width: 16.5vw;
   outline: none;
   border: none;
@@ -29,14 +29,14 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;  
 }
 
-.login-buttons {
+.signup-buttons {
   display: flex;
   justify-content: space-evenly;
   margin-top: 15px;
   
 }
 
-.login-buttons button {
+.signup-buttons button {
   font-family: 'Quicksand', sans-serif;  
   font-size: 20px; 
   color: white;

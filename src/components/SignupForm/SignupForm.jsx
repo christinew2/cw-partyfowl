@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import './SignupForm.module.css'
+import './SignupForm.css'
 import * as authService from '../../services/authService'
 
 const SignupForm = (props) => {
@@ -41,11 +41,11 @@ const SignupForm = (props) => {
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className="sign-up-form"
+      className="signup-form"
     >
       <div className="signup-input">
         <label htmlFor="name" className="signup-label">
-          Name: 
+          Name 
         </label>
         <input
           type="text"
@@ -54,12 +54,12 @@ const SignupForm = (props) => {
           value={formData.name}
           name="name"
           onChange={handleChange}
-          placeholder="Goose"
+          placeholder="Celebirdy"
           required
         />
       </div>
       <div className="signup-input">
-        <label htmlFor="email-input" className="signup-label">Email: </label>
+        <label htmlFor="email-input" className="signup-label">Email </label>
         <input
           type="text"
           autoComplete="off"
@@ -67,27 +67,13 @@ const SignupForm = (props) => {
           value={formData.email}
           name="email"
           onChange={handleChange}
-          placeholder="honk@gaggle.com"
+          placeholder="michael@quackson.com"
           required
         />
       </div>
       <div className="signup-input">
-        <label htmlFor="age-input" className="signup-label">
-          Age: 
-        </label>
-        <input
-          type="number"
-          autoComplete="off"
-          id="age"
-          value={formData.age}
-          name="age"
-          onChange={handleChange}
-          placeholder="1"
-        />
-      </div>
-      <div className="signup-input">
         <label htmlFor="location-input" className="signup-label">
-          Location: 
+          Location
         </label>
         <input
           type="text"
@@ -96,12 +82,12 @@ const SignupForm = (props) => {
           value={formData.location}
           name="location"
           onChange={handleChange}
-          placeholder="123456 (zipcode)"
+          placeholder="123456 (Zip Code)"
         />
       </div>
       <div className="signup-input">
         <label htmlFor="password-input" className="signup-label">
-          Password: 
+          Password 
         </label>
         <input
           type="password"
@@ -110,12 +96,12 @@ const SignupForm = (props) => {
           value={formData.password}
           name="password"
           onChange={handleChange}
-          placeholder="secret honk!"
+          placeholder="Secret honk!"
         />
       </div>
       <div className="signup-input">
         <label htmlFor="confirm-input" className="signup-label">
-          Confirm Password: 
+          Confirm Password 
         </label>
         <input
           type="password"
@@ -124,16 +110,16 @@ const SignupForm = (props) => {
           value={formData.passwordConf}
           name="passwordConf"
           onChange={handleChange}
-          placeholder="secret honk!"
+          placeholder="Secret honk!"
         />
       </div>
-      <div className="signup-input">
+      {/* <div className="signup-input">
         <label htmlfor="avatar" className="signup-label">Profile Image: </label>
         <input type="file" id="avatar" name="avatar"
               accept=".jpg, .jpeg, .png"/>
-      </div>
-      <div className="signup-input">
-        <button disabled={validForm} className="signup-button">Sign Up</button>
+      </div> */}
+      <div className="signup-buttons">
+        <button disabled={validForm}>Sign Up</button>
         <Link to="/">
           <button>Cancel</button>
         </Link>
